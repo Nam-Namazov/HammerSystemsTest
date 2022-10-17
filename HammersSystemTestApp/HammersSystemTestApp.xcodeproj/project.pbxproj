@@ -16,6 +16,9 @@
 		995A2D6A28FDDC66000F4C88 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D6928FDDC66000F4C88 /* ProfileViewController.swift */; };
 		995A2D6D28FDDC73000F4C88 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D6C28FDDC73000F4C88 /* ContactsViewController.swift */; };
 		995A2D7828FDDD5D000F4C88 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D7728FDDD5D000F4C88 /* MenuViewController.swift */; };
+		995A2D7B28FDEDE9000F4C88 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D7A28FDEDE9000F4C88 /* BannerCollectionViewCell.swift */; };
+		995A2D7D28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D7C28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift */; };
+		995A2D7F28FDEE03000F4C88 /* CoctailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D7E28FDEE03000F4C88 /* CoctailListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		995A2D6928FDDC66000F4C88 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		995A2D6C28FDDC73000F4C88 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		995A2D7728FDDD5D000F4C88 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		995A2D7A28FDEDE9000F4C88 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		995A2D7C28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		995A2D7E28FDEE03000F4C88 /* CoctailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 		995A2D6028FDDB86000F4C88 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				995A2D7928FDEDDD000F4C88 /* Cells */,
 				995A2D7728FDDD5D000F4C88 /* MenuViewController.swift */,
 			);
 			path = View;
@@ -244,6 +251,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		995A2D7928FDEDDD000F4C88 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				995A2D7A28FDEDE9000F4C88 /* BannerCollectionViewCell.swift */,
+				995A2D7C28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift */,
+				995A2D7E28FDEE03000F4C88 /* CoctailListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,9 +334,12 @@
 				995A2D4B28FDDA8C000F4C88 /* MainTabBarController.swift in Sources */,
 				995A2D6728FDDC5A000F4C88 /* TrashViewController.swift in Sources */,
 				995A2D6A28FDDC66000F4C88 /* ProfileViewController.swift in Sources */,
+				995A2D7F28FDEE03000F4C88 /* CoctailListTableViewCell.swift in Sources */,
 				995A2D7828FDDD5D000F4C88 /* MenuViewController.swift in Sources */,
+				995A2D7D28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift in Sources */,
 				995A2D4728FDDA8C000F4C88 /* AppDelegate.swift in Sources */,
 				995A2D4928FDDA8C000F4C88 /* SceneDelegate.swift in Sources */,
+				995A2D7B28FDEDE9000F4C88 /* BannerCollectionViewCell.swift in Sources */,
 				995A2D6D28FDDC73000F4C88 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
