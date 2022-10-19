@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27BAAC064493D9FE0A7470D1 /* Pods_HammersSystemTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABB3DBCB215FADDFB2A17B /* Pods_HammersSystemTestApp.framework */; };
 		995A2D4728FDDA8C000F4C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D4628FDDA8C000F4C88 /* AppDelegate.swift */; };
 		995A2D4928FDDA8C000F4C88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D4828FDDA8C000F4C88 /* SceneDelegate.swift */; };
 		995A2D4B28FDDA8C000F4C88 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D4A28FDDA8C000F4C88 /* MainTabBarController.swift */; };
@@ -19,9 +20,16 @@
 		995A2D7B28FDEDE9000F4C88 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D7A28FDEDE9000F4C88 /* BannerCollectionViewCell.swift */; };
 		995A2D7D28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D7C28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift */; };
 		995A2D7F28FDEE03000F4C88 /* CoctailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D7E28FDEE03000F4C88 /* CoctailListTableViewCell.swift */; };
+		995A2D8128FDFBEA000F4C88 /* CoctailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D8028FDFBEA000F4C88 /* CoctailModel.swift */; };
+		995A2D8428FDFD60000F4C88 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D8328FDFD60000F4C88 /* NetworkService.swift */; };
+		995A2D8628FE0A1A000F4C88 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D8528FE0A1A000F4C88 /* MenuPresenter.swift */; };
+		995A2D8C28FF61D9000F4C88 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D8B28FF61D9000F4C88 /* Reachability.swift */; };
+		995A2D8F28FF6208000F4C88 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D8E28FF6208000F4C88 /* UserDefaultsHelper.swift */; };
+		995A2D9128FFDACE000F4C88 /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A2D9028FFDACE000F4C88 /* UIColor + ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93DAE642EB137FDCC3A064E2 /* Pods-HammersSystemTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HammersSystemTestApp.release.xcconfig"; path = "Target Support Files/Pods-HammersSystemTestApp/Pods-HammersSystemTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		995A2D4328FDDA8C000F4C88 /* HammersSystemTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HammersSystemTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995A2D4628FDDA8C000F4C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995A2D4828FDDA8C000F4C88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,14 @@
 		995A2D7A28FDEDE9000F4C88 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		995A2D7C28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		995A2D7E28FDEE03000F4C88 /* CoctailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailListTableViewCell.swift; sourceTree = "<group>"; };
+		995A2D8028FDFBEA000F4C88 /* CoctailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailModel.swift; sourceTree = "<group>"; };
+		995A2D8328FDFD60000F4C88 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		995A2D8528FE0A1A000F4C88 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		995A2D8B28FF61D9000F4C88 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		995A2D8E28FF6208000F4C88 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		995A2D9028FFDACE000F4C88 /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
+		A7B5452FD0CDA7B51E2A175F /* Pods-HammersSystemTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HammersSystemTestApp.debug.xcconfig"; path = "Target Support Files/Pods-HammersSystemTestApp/Pods-HammersSystemTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F5ABB3DBCB215FADDFB2A17B /* Pods_HammersSystemTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HammersSystemTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BAAC064493D9FE0A7470D1 /* Pods_HammersSystemTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53493EAA33B43B7D0BCE730E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7B5452FD0CDA7B51E2A175F /* Pods-HammersSystemTestApp.debug.xcconfig */,
+				93DAE642EB137FDCC3A064E2 /* Pods-HammersSystemTestApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D5A1C02CAC029E24FEB7F7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABB3DBCB215FADDFB2A17B /* Pods_HammersSystemTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		995A2D3A28FDDA8C000F4C88 = {
 			isa = PBXGroup;
 			children = (
 				995A2D4528FDDA8C000F4C88 /* HammersSystemTestApp */,
 				995A2D4428FDDA8C000F4C88 /* Products */,
+				53493EAA33B43B7D0BCE730E /* Pods */,
+				7D5A1C02CAC029E24FEB7F7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +150,13 @@
 			isa = PBXGroup;
 			children = (
 				995A2D5C28FDDB3F000F4C88 /* TabBarController */,
+				995A2D8D28FF61F8000F4C88 /* LocalPersistence */,
+				995A2D8228FDFD54000F4C88 /* NetworkService */,
 				995A2D6228FDDBDE000F4C88 /* Menu */,
 				995A2D6328FDDBE2000F4C88 /* Contacts */,
 				995A2D6428FDDC1E000F4C88 /* Profile */,
 				995A2D6528FDDC20000F4C88 /* Trash */,
+				995A2D8A28FF61C7000F4C88 /* Helpers */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -125,6 +164,7 @@
 		995A2D5F28FDDB82000F4C88 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				995A2D8028FDFBEA000F4C88 /* CoctailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +181,7 @@
 		995A2D6128FDDB89000F4C88 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				995A2D8528FE0A1A000F4C88 /* MenuPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -261,6 +302,31 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		995A2D8228FDFD54000F4C88 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				995A2D8328FDFD60000F4C88 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		995A2D8A28FF61C7000F4C88 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				995A2D8B28FF61D9000F4C88 /* Reachability.swift */,
+				995A2D9028FFDACE000F4C88 /* UIColor + ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		995A2D8D28FF61F8000F4C88 /* LocalPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				995A2D8E28FF6208000F4C88 /* UserDefaultsHelper.swift */,
+			);
+			path = LocalPersistence;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 995A2D5728FDDA8D000F4C88 /* Build configuration list for PBXNativeTarget "HammersSystemTestApp" */;
 			buildPhases = (
+				0029E3520C8756F1F6754833 /* [CP] Check Pods Manifest.lock */,
 				995A2D3F28FDDA8C000F4C88 /* Sources */,
 				995A2D4028FDDA8C000F4C88 /* Frameworks */,
 				995A2D4128FDDA8C000F4C88 /* Resources */,
+				C1C3C40EF30FA138FEE1703B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,20 +394,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0029E3520C8756F1F6754833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HammersSystemTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C3C40EF30FA138FEE1703B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HammersSystemTestApp/Pods-HammersSystemTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HammersSystemTestApp/Pods-HammersSystemTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HammersSystemTestApp/Pods-HammersSystemTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		995A2D3F28FDDA8C000F4C88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995A2D8F28FF6208000F4C88 /* UserDefaultsHelper.swift in Sources */,
+				995A2D8C28FF61D9000F4C88 /* Reachability.swift in Sources */,
 				995A2D4B28FDDA8C000F4C88 /* MainTabBarController.swift in Sources */,
 				995A2D6728FDDC5A000F4C88 /* TrashViewController.swift in Sources */,
 				995A2D6A28FDDC66000F4C88 /* ProfileViewController.swift in Sources */,
 				995A2D7F28FDEE03000F4C88 /* CoctailListTableViewCell.swift in Sources */,
 				995A2D7828FDDD5D000F4C88 /* MenuViewController.swift in Sources */,
+				995A2D9128FFDACE000F4C88 /* UIColor + ext.swift in Sources */,
+				995A2D8128FDFBEA000F4C88 /* CoctailModel.swift in Sources */,
+				995A2D8628FE0A1A000F4C88 /* MenuPresenter.swift in Sources */,
 				995A2D7D28FDEDF6000F4C88 /* CategoryCollectionViewCell.swift in Sources */,
 				995A2D4728FDDA8C000F4C88 /* AppDelegate.swift in Sources */,
 				995A2D4928FDDA8C000F4C88 /* SceneDelegate.swift in Sources */,
 				995A2D7B28FDEDE9000F4C88 /* BannerCollectionViewCell.swift in Sources */,
+				995A2D8428FDFD60000F4C88 /* NetworkService.swift in Sources */,
 				995A2D6D28FDDC73000F4C88 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +590,7 @@
 		};
 		995A2D5828FDDA8D000F4C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B5452FD0CDA7B51E2A175F /* Pods-HammersSystemTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +618,7 @@
 		};
 		995A2D5928FDDA8D000F4C88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93DAE642EB137FDCC3A064E2 /* Pods-HammersSystemTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

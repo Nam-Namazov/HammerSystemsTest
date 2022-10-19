@@ -31,18 +31,17 @@ final class MainTabBarController: UITabBarController {
     
     private func configureAppearance() {
         let tabBarAppearance = UITabBarAppearance()
-        let navBarAppearance = UINavigationBarAppearance()
-        
-        tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
-        
-        UINavigationBar.appearance().standardAppearance = navBarAppearance
-        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
     }
     
     private func configureTabBarController() {
+        let menuVC = MenuViewController()
+        let presenter = MenuPresenter()
+        menuVC.presenter = presenter
+        presenter.view = menuVC
+
         let menuViewController = createNavController(
-            viewController: MenuViewController(),
+            viewController: menuVC,
             itemImage: "fork.knife"
         )
         
@@ -77,4 +76,3 @@ final class MainTabBarController: UITabBarController {
         return navController
     }
 }
-
