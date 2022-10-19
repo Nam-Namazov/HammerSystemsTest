@@ -15,6 +15,7 @@ protocol MenuPresenterInput: AnyObject {
     func numberOfDrinks() -> Int
     func numberOfCategories() -> Int
     func indexOfCategory(_ category: String) -> Int?
+    func firstIndexOfDrink(with category: String) -> Int?
 }
 
 protocol MenuPresenterOutput: AnyObject { 
@@ -29,6 +30,12 @@ class MenuPresenter {
 }
 
 extension MenuPresenter: MenuPresenterInput {
+    func firstIndexOfDrink(with category: String) -> Int? {
+        return drinks.firstIndex {
+            $0.strCategory == category
+        }
+    }
+
     func indexOfCategory(_ category: String) -> Int? {
         return categories.firstIndex {
             $0 == category
@@ -85,6 +92,9 @@ extension MenuPresenter: MenuPresenterInput {
                             }
                         }
                     }
+                    
+                    self.categories = self.categories.sorted()
+                    drinks = drinks.sorted(by: { $0.strCategory! < $1.strCategory! })
                     
                     UserDefaultsHelper.saveAllDrinks(allObjects: drinks)
                     UserDefaultsHelper.saveAllCategories(allObjects: self.categories)

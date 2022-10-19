@@ -142,7 +142,7 @@ final class MenuViewController: UIViewController {
 extension MenuViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        if collectionView == self.bannerCollectionView {
+        if collectionView === bannerCollectionView {
             return 3
         } else {
             return presenter?.numberOfCategories() ?? 0
@@ -151,7 +151,7 @@ extension MenuViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == self.bannerCollectionView {
+        if collectionView === bannerCollectionView {
             guard let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: BannerCollectionViewCell.identifier,
                 for: indexPath) as? BannerCollectionViewCell else {
@@ -161,7 +161,8 @@ extension MenuViewController: UICollectionViewDataSource {
         } else {
             guard let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: CategoryCollectionViewCell.identifier,
-                for: indexPath) as? CategoryCollectionViewCell, let category = presenter?.categoryModel(at: indexPath.row) else {
+                for: indexPath) as? CategoryCollectionViewCell,
+                  let category = presenter?.categoryModel(at: indexPath.row) else {
                 return UICollectionViewCell()
             }
             cell.configure(withDrink: category)
@@ -175,6 +176,16 @@ extension MenuViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        
+        if collectionView === categoryCollectionView,
+           let category = presenter?.categoryModel(at: indexPath.row),
+           let index = presenter?.firstIndexOfDrink(with: category)  {
+            coctailListTableView.scrollToRow(
+                at: IndexPath(row: index, section: 0),
+                at: .top,
+                animated: false
+            )
+        }
     }
 }
 
@@ -211,6 +222,10 @@ extension MenuViewController: UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard scrollView === coctailListTableView else {
+            return
+        }
+        
         if let firstIndex = coctailListTableView.indexPathsForVisibleRows?.first?.row,
            let drink = presenter?.drinkModel(at: firstIndex),
            let category = drink.strCategory,
